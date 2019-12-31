@@ -65,7 +65,7 @@ The script editor should open a file called `Code.gs` in a new tab (or window) o
 
 ![Script editor](images/UtilitySetup2.png)
 
-Replace all the contents of the script editor with contents of the utility script (all the code) from X:
+Replace all the contents of the script editor with contents of the utility script (all the code) from https://github.com/hvshah1974/mergeutility/blob/master/Code.gs, the `Code.gs` file in the root of this repository:
 
 ![Utility script code into the project](images/UtilitySetup3.png)
 
