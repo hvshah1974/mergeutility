@@ -25,7 +25,7 @@ Enter the body of your template, using `<<` and `>>` to indicate variables that 
 
 Give your document a name.
 
-*NOTE*: The name must _not _match any other document in any folder within your Drive. This is super-important, otherwise the merge utility won't work.
+*NOTE*: The name must _not_ match any other document in any folder within your Drive. This is super-important, otherwise the merge utility won't work.
 
 Also, make sure you remember the name because it'll be used later.
 
