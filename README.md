@@ -12,13 +12,13 @@ Once those steps are done, you can execute the utility as many times as you need
 
 ### Create the template document
 Open Google Drive
-![Google Drive main page](images/Template1.png]
+![Google Drive main page](images/Template1.png)
 
 Create a new Google Doc (`+ New` :arrow_right: `Google Docs` :arrow_right: `Blank document`)
-![Creating a new Google Doc](images/Template2.png]
+![Creating a new Google Doc](images/Template2.png)
 
 Enter the body of your template, using `<<` and `>>` to indicate variables that should be replaced as part of your mailmerge.
-![Draft your template](images/Template3.png]
+![Draft your template](images/Template3.png)
 
 Give your document a name.
 
