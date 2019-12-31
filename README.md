@@ -119,3 +119,8 @@ When you open the file, you should see the results of the mail merge. In my exam
 ![Output file](images/Execution10.png)
 
 Done with execution
+
+### Sample
+The sample I generated while putting together this README can be found in a public folder on my Google Drive: https://drive.google.com/drive/u/0/folders/1PB_oiHb4ytcxSRtbcBFcHuoUduppHjt9
+
+Please don't hestitate to reach out with questions / concerns, or if you'd like to see (or build) additional features.
