@@ -121,7 +121,7 @@ When you open the file, you should see the results of the mail merge. In my exam
 Done with execution
 
 ### Mail merge with labels (or label-like things)
-Form letters are useful, but I've needed "label-like" things far more often. This utility does "label-like" also. I intentionally call it "label-like" because it doesn't have any built-in templates for off-the-shelf labels from the standard manufacturers. In fact, I've only ever used it for generating a sheet of math problems for my kid, using the following steps.
+Form letters are useful, but I've needed "label-like" things far more often. This utility does "label-like" also. I intentionally call it "label-like" because it doesn't have any built-in templates for off-the-shelf labels from the standard manufacturers. In fact, I've only ever used it for generating a sheet of math problems for my elementary schooler, using the following steps.
 
 #### Create the template document
 In your Google Drive main page, create a new Google Doc (`+ New` :arrow_right: `Google Docs` :arrow_right: `Blank document`)
@@ -145,16 +145,16 @@ Also, make sure you remember the name because it'll be used later.
 Done with the template
 
 #### Create the merge data
-You can create a new merge data Google Sheet *or* create a new sheet in the existing Google Sheet that has the Merge utility installed. The below steps are for a new tab. If you choose to create a new Sheet, follow the first couple of steps of the "Create the merge data" section above, and repeat all of the steps in the "Add the utility script to the merge data sheet" section for the new Sheet.
+You can create a new merge data Google Sheet *or* create a new tab in the existing Google Sheet that has the Merge utility installed. The below steps are for a new tab. If you choose to create a new Google Sheet document, follow the first couple of steps of the "Create the merge data" section above, and repeat all of the steps in the "Add the utility script to the merge data sheet" section for the new Google Sheet document.
 
-In the existing merge data sheet, click the giant + icon in the lower left corner to add a new sheet
-![Adding a Sheet](images/MergeData6.png)
+In the existing merge data Google Sheet, click the giant + icon in the lower left corner to add a new tab
+![Adding a Tab](images/MergeData6.png)
 
 In the first row, enter each of the names of the variables you used in your template doc
 
 ![Variable names as column headers](images/MergeData7.png)
 
-For each copy of the letter you want to create, enter a new row in the sheet
+For each row you want to create in the output, enter a new row in the sheet
 
 ![Populate your merge data](images/MergeData8.png)
 
@@ -167,11 +167,11 @@ Done with the merge data
 #### To execute the script
 If you chose to create a new Google Sheet for your new merge data, follow the steps in the "To execute the script" section above.
 
-Make sure you're on the "label-like" sheet in the merge data Google Sheet. Selecting the `Merge` menu and the 'Merge' menu option will execute the script. The script should execute *for the tab that you're currently on* in the spreadsheet, using the same name to look up the template document. The script will display a message when it's complete, with the name of the output file it generated as a result of the mail merge. The output file name will be the same as the template, with the word `output` and a date/timestamp value appended. For example, `Addition and Subtraction-output-20201213-032949-545` which represents the execution of the script against the template `Addition and Subtraction` at the time of writing - on 2020/12/13 at 03:29:49.545 UTC (49.545 seconds after 10:29pm Eastern Standard Time on December 12, 2020)
+Make sure you're on the "label-like" tab in the merge data Google Sheet. Selecting the `Merge` menu and the 'Merge' menu option will execute the script. The script should execute *for the tab that you're currently on* in the spreadsheet, using the same name to look up the template document. The script will display a message when it's complete, with the name of the output file it generated as a result of the mail merge. The output file name will be the same as the template, with the word `output` and a date/timestamp value appended. For example, `Addition and Subtraction-output-20201213-032949-545` which represents the execution of the script against the template `Addition and Subtraction` at the time of writing - on 2020/12/13 at 03:29:49.545 UTC (49.545 seconds after 10:29pm Eastern Standard Time on December 12, 2020)
 
 ![Script execution complete](images/Execution11.png)
 
-When you navigate back to Drive, you should see the new file. When you open the file, you should see the results of the mail merge.
+When you navigate back to Drive, you should see the new file. When you open the file, you should see the results of the label merge.
 
 ![Output file](images/Execution12.png)
 
