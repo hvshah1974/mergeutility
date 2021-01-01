@@ -120,7 +120,66 @@ When you open the file, you should see the results of the mail merge. In my exam
 
 Done with execution
 
+### Mail merge with labels (or label-like things)
+Form letters are useful, but I've needed "label-like" things far more often. This utility does "label-like" also. I intentionally call it "label-like" because it doesn't have any built-in templates for off-the-shelf labels from the standard manufacturers. In fact, I've only ever used it for generating a sheet of math problems for my elementary schooler, using the following steps.
+
+#### Create the template document
+In your Google Drive main page, create a new Google Doc (`+ New` :arrow_right: `Google Docs` :arrow_right: `Blank document`)
+
+![Creating a new Google Doc](images/Template5.png)
+
+Enter the body of your template, using `<<` and `>>` to indicate variables that should be replaced as part of your mailmerge.
+
+*NOTE*: For "label-like" mail merges, the document _can only contain_ a single table with one row. This is super-important, otherwise the merge utility won't work.
+
+![Draft your template](images/Template6.png)
+
+Give your document a name.
+
+*NOTE*: The name must _not_ match any other document in any folder within your Drive. This is super-important, otherwise the merge utility won't work.
+
+Also, make sure you remember the name because it'll be used later.
+
+![Name your document, and remember the name](images/Template7.png)
+
+Done with the template
+
+#### Create the merge data
+You can create a new merge data Google Sheet *or* create a new tab in the existing Google Sheet that has the Merge utility installed. The below steps are for a new tab. If you choose to create a new Google Sheet document, follow the first couple of steps of the "Create the merge data" section above, and repeat all of the steps in the "Add the utility script to the merge data sheet" section for the new Google Sheet document.
+
+In the existing merge data Google Sheet, click the giant + icon in the lower left corner to add a new tab
+![Adding a Tab](images/MergeData6.png)
+
+In the first row, enter each of the names of the variables you used in your template doc
+
+![Variable names as column headers](images/MergeData7.png)
+
+For each row you want to create in the output, enter a new row in the sheet
+
+![Populate your merge data](images/MergeData8.png)
+
+Name the tab to match the template document name exactly.
+
+![Name your tab](images/MergeData9.png)
+
+Done with the merge data
+
+#### To execute the script
+If you chose to create a new Google Sheet for your new merge data, follow the steps in the "To execute the script" section above.
+
+Make sure you're on the "label-like" tab in the merge data Google Sheet. Selecting the `Merge` menu and the 'Merge' menu option will execute the script. The script should execute *for the tab that you're currently on* in the spreadsheet, using the same name to look up the template document. The script will display a message when it's complete, with the name of the output file it generated as a result of the mail merge. The output file name will be the same as the template, with the word `output` and a date/timestamp value appended. For example, `Addition and Subtraction-output-20201213-032949-545` which represents the execution of the script against the template `Addition and Subtraction` at the time of writing - on 2020/12/13 at 03:29:49.545 UTC (49.545 seconds after 10:29pm Eastern Standard Time on December 12, 2020)
+
+![Script execution complete](images/Execution11.png)
+
+When you navigate back to Drive, you should see the new file. When you open the file, you should see the results of the label merge.
+
+![Output file](images/Execution12.png)
+
+Done with "label-like" execution.
+
+*NOTE* I've been using the phrase "label-like" because this program is small and simple. It contains no standard templates for the standard label manufacturers' products. If you want true "label" functionality, you can look up the dimensions of the labels online (or on the box) for the specific product you're trying to print.
+
 ### Sample
-The sample I generated while putting together this README can be found in a public folder on my Google Drive: https://drive.google.com/drive/u/0/folders/1PB_oiHb4ytcxSRtbcBFcHuoUduppHjt9
+The samples I generated while putting together this README can be found in a public folder on my Google Drive: https://drive.google.com/drive/u/0/folders/1PB_oiHb4ytcxSRtbcBFcHuoUduppHjt9
 
 Please don't hestitate to reach out with questions / concerns, or if you'd like to see (or build) additional features.
