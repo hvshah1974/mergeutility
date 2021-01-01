@@ -75,6 +75,7 @@ function startMerge(templateBody, headerRow, dataRows, outputBody) {
   } else {
     for (var dataRow in dataRowValues) {
       performMerge(templateBody, variableNames, dataRowValues[dataRow], outputBody)
+      outputBody.appendPageBreak()
     }
   }
 }
